@@ -411,7 +411,7 @@ static void _NAKED_ _NONINLINE_ coopTaskStart(void) {
 		"bl	coopSchedule;"
 		/* r0 holds address of next task context */
 #if defined(ARDUINO_ARCH_SAMD)
-		/* for cortex m0, ldm and stm are restricted to low registers */
+		/* for Cortex M0, ldm and stm are restricted to low registers */
 		/* load high registers */
 		"add   r0, #16;"	 /* they are 4 words higher in memory */
 		"ldmia r0, {r1-r6};" /* load them in low registers first... */
@@ -456,7 +456,7 @@ static void _NAKED_ _NONINLINE_ coopDoYield(CoopTask* curTask) {
 		"bl	coopSchedule;"
 		/* r0 holds address of next task context */
 #if defined(ARDUINO_ARCH_SAMD)
-		/* for cortex m0, ldm and stm are restricted to low registers */
+		/* for Cortex M0, ldm and stm are restricted to low registers */
 		/* load high registers */
 		"add   r0, #16;"	 /* they are 4 words higher in memory */
 		"ldmia r0, {r1-r6};" /* load them in low registers first... */
