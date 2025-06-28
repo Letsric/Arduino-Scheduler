@@ -2,6 +2,8 @@ This is basically [vbextreme's repo](https://github.com/vbextreme/Scheduler), ju
 
 I just made this to use it until the [official PR](https://github.com/arduino-libraries/Scheduler/pull/1) gets merged.
 
+Check out the example project on Wokwi: <https://wokwi.com/projects/434992178008162305>
+
 # Scheduler Library for Arduino
 
 The Scheduler library enables the Arduino to run multiple functions at the same time. This allows tasks to happen without interrupting each other.
