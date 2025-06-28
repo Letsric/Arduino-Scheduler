@@ -10,6 +10,14 @@ The Scheduler library enables the Arduino to run multiple functions at the same 
 
 For more information about this library visit <http://www.arduino.cc/en/Reference/Scheduler>
 
+## How-to-use
+
+1. [Download the library](https://github.com/Letsric/Arduino-Scheduler/archive/refs/heads/main.zip)
+2. Open Arduino IDE and Select `Sketch -> Include Library -> Add .ZIP Library...`
+3. Select the downloaded file
+4. You will see `Successfully installed library from Arduino-Scheduler-main.zip archive`
+5. Go to `File -> Examples -> Scheduler -> MultipleBlinks` to try it out
+
 ## License
 
 Copyright (c) 2012 The Android Open Source Project. All right reserved.
